@@ -1,11 +1,11 @@
 // C++ includes used for precompiling on Visual Studio
 
 // Copyright (c) 2023 Xi Xu
-// SPDX-License-Identifier: GNU General Public License version 3
+// SPDX-License-Identifier: GPL-3.0-or-later
 
 // This file is a modified version of the <bits/stdc++.h> file from GCC 13.1.0 that is compatible with Visual Studio.
 // The modifications are made by Xi Xu whose personal official home page is https://xi-xu-zg.github.io/.
-// The original file is distributed under the GNU General Public License.
+// The original file is distributed under the GNU General Public License v3.0 or later.
 // You can find the original file at https://gcc.gnu.org/onlinedocs/gcc-13.1.0/libstdc++/api/a00839_source.html.
 
 // 17.4.1.2 Headers
