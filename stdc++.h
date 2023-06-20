@@ -23,6 +23,57 @@
 #include <cstddef>
 #include <cstdlib>
 #include <cstdint>
+
+// C++
+// #include <bitset>
+// #include <complex>
+#include <algorithm>
+#include <bitset>
+#include <functional>
+#include <iterator>
+#include <limits>
+#include <memory>
+#include <new>
+#include <numeric>
+#include <typeinfo>
+#include <utility>
+#include <array>
+#include <atomic>
+#include <initializer_list>
+#include <ratio>
+#include <scoped_allocator>
+#include <tuple>
+#include <typeindex>
+#include <type_traits>
+
+#if _HAS_CXX17
+#include <any>
+// #include <execution>
+#include <optional>
+#include <variant>
+#include <string_view>
+#endif
+
+#if _HAS_CXX20
+#include <bit>
+#include <compare>
+#include <concepts>
+#include <numbers>
+#include <ranges>
+#include <span>
+#include <source_location>
+#include <version>
+#endif
+
+#if _HAS_CXX23
+#include <expected>
+#include <stdatomic.h>
+#if __cpp_impl_coroutine
+#include <coroutine>
+#endif
+#endif
+
+// C
 #include <cassert>
 #include <cctype>
 #include <cerrno>
@@ -51,44 +102,6 @@
 #include <cuchar>
 
 // C++
-// #include <bitset>
-// #include <complex>
-#include <algorithm>
-#include <bitset>
-#include <functional>
-#include <iterator>
-#include <limits>
-#include <memory>
-#include <new>
-#include <numeric>
-#include <typeinfo>
-#include <utility>
-#include <array>
-#include <atomic>
-#include <initializer_list>
-#include <ratio>
-#include <scoped_allocator>
-#include <tuple>
-#include <typeindex>
-#include <type_traits>
-#include <any>
-// #include <execution>
-#include <optional>
-#include <variant>
-#include <string_view>
-#include <bit>
-#include <compare>
-#include <concepts>
-#include <numbers>
-#include <ranges>
-#include <span>
-#include <source_location>
-#include <version>
-#include <expected>
-#include <stdatomic.h>
-#if __cpp_impl_coroutine
-#include <coroutine>
-#endif
 #include <complex>
 #include <deque>
 #include <exception>
@@ -140,6 +153,8 @@
 #include <unordered_map>
 #include <unordered_set>
 #include <shared_mutex>
+
+#if _HAS_CXX17
 #include <any>
 #include <charconv>
 // #include <execution>
@@ -147,6 +162,9 @@
 #include <optional>
 #include <memory_resource>
 #include <variant>
+#endif
+
+#if _HAS_CXX20
 #include <barrier>
 #include <bit>
 #include <compare>
@@ -161,9 +179,14 @@
 #include <source_location>
 #include <syncstream>
 #include <version>
+#endif
+
+#if _HAS_CXX23
 #include <expected>
 #include <spanstream>
 #if __has_include(<stacktrace>)
 #include <stacktrace>
 #endif
 #include <stdatomic.h>
+#include <stdfloat>
+#endif
