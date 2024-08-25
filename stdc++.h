@@ -1,4 +1,4 @@
-// C++ includes used for precompiling on Visual Studio
+// C++ includes used for precompiling -*- C++ -*- for Visual Studio
 
 // Copyright (c) 2023 Xi Xu
 // SPDX-License-Identifier: GPL-3.0-or-later
